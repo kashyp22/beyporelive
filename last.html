@@ -19,10 +19,11 @@
         }
         .navbar-brand {
             font-weight: bold;
-            color: #ffc107 !important;
+            /* color: #ffc107 !important; */
+            color: #ffffff !important;
         }
         .hero {
-            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+            background: url('assets/sean-oulashin-KMn4VEeEPR8-unsplash.jpg') no-repeat center center/cover;
             height: 80vh;
             color: white;
             display: flex;
@@ -70,22 +71,36 @@
 </head>
 <body>
 
+
+
+
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#home">Beypore Live</a>
+
+        <!-- Logo with proper size -->
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+            <img src="assets/Untitled983_20250711172752.png" 
+                 alt="Logo" 
+                 class="me-2"
+                 style="height:40px; width:40px; border-radius:50%;">
+            <span>Beypore Live</span>
+        </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link text-warning" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link text-warning" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link text-warning" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
+
 
 <!-- Hero Section -->
 <section id="home" class="hero">
@@ -107,11 +122,6 @@
                 <img src="assets/WhatsApp Image 2025-08-14 at 17.52.00_19916a96.jpg" alt="Beypore Beach" class="img-fluid rounded shadow">
             </div>
             <div class="col-md-6" data-aos="fade-left">
-                <!-- <div class="card p-4 shadow-lg rounded-4">
-                    <p><strong>Beypore Live</strong> is your window to the pulse of Beypore and beyond. We are a dynamic digital media channel bringing you the latest news, stories, and happenings.</p>
-                    <p>From breathtaking beaches to cultural celebrations – we aim to be your go-to source for everything Beypore.</p>
-                </div> -->
-
                 <div class="jumbotron-style" data-aos="fade-up">
                     <h4>About Beypore Live</h4>
                     <p><strong>Beypore Live</strong> is your window to the pulse of Beypore and beyond. We are a dynamic digital media channel bringing you the latest news, stories, and happenings.</p>
@@ -126,10 +136,6 @@
                 <img src="assets/WhatsApp Image 2025-08-14 at 17.52.00_8e924453.jpg" alt="Beypore Mission" class="img-fluid rounded shadow">
             </div>
             <div class="col-md-6 order-md-1" data-aos="fade-right">
-                <!-- <div class="card p-4 shadow-lg rounded-4">
-                    <p>Our mission is to celebrate Beypore’s heritage, capture its present, and be a platform for its future. We believe in storytelling that unites and inspires.</p>
-                </div> -->
-
 
                 <div class="jumbotron-style" data-aos="fade-up">
                     <h4>Our Mission</h4>
@@ -141,11 +147,7 @@
     </div>
 </section>
 
-<!-- Contact Section -->
 
-
-
-<!-- AOS Animation -->
 
 
 <!-- Contact Section -->
@@ -193,6 +195,9 @@
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<!-- aos animation -->
 <script>
     AOS.init({ duration: 1000, once: true });
 </script>
